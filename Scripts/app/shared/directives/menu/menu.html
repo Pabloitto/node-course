@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-init="init()">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" data-ng-href="#/main">Home</a>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+    </ul>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li data-ng-repeat="menuItem in menu track by menuItem.Id">
+                <a class="menu-icon"
+                    data-ng-href="{{menuItem.Route}}">
+                    <i class="glyphicon" ng-class="menuItem.CssIcon"></i>
+                    <span class="icon-name">{{menuItem.Label}}
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>

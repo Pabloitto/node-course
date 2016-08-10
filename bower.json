@@ -1,0 +1,11 @@
+{
+  "name": "angular-tools",
+  "version": "1.0",
+  "authors": [
+    "pablo <pabloitto@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

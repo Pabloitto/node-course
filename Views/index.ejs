@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html data-ng-app="nodeCourse">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Node Course</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/menu.css" rel="stylesheet" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app/main.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <menu menu-options="{ titleLabel : '' }"></menu>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-content">
+                            <div data-ng-view></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
